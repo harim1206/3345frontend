@@ -26,7 +26,9 @@ class Release extends Component{
 
     return(
       <React.Fragment>
-        <tr onClick={()=>this.onReleaseClick(release, release.id)}>
+        <tr
+          className='release-row'
+          onClick={()=>this.onReleaseClick(release, release.id)}>
           <td>{release.artist}</td>
           <td>{release.title}</td>
           <td>{release.label}</td>

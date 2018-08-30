@@ -10,6 +10,7 @@ const store = createStore(
   initialState,
   compose(
     applyMiddleware(...middleware)
+    // disable in production environment
     // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 

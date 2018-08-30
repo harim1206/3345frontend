@@ -15,7 +15,7 @@ import PlaylistTracksContainer from './PlaylistTracksContainer/PlaylistTracksCon
 class App extends Component {
 
   componentDidMount(){
-    // this.props.fetchPlaylists()
+    this.props.fetchPlaylists()
   }
 
   // create background div element

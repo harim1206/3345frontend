@@ -165,6 +165,10 @@ body {
 
 }
 
+.release-row, .youtube-row{
+  cursor: pointer;
+}
+
 select{
   width: 100px;
 }

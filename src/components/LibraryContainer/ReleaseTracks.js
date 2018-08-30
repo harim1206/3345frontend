@@ -69,7 +69,7 @@ class ReleaseTracks extends Component{
       // debugger
       return (
         <tr
-          className='track-container-row'
+          className='track-container-row youtube-row'
           onClick={(event)=>this.onVideoClick(video, event)}
         >
           <td></td>
