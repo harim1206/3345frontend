@@ -25,16 +25,25 @@ class UsernameInput extends Component{
 
   render(){
     return(
-      <div class="usernameInput-container">
-        <input type="text"
-          value={this.props.usernameInput}
-          onChange={(e)=>this.onUsernameInputChange(e)}
-          placeholder="Discogs Username"
-        />
-        <button
-          type="button"
-          onClick={this.onUsernameSubmit}
-        >Go</button>
+      <div class="landingPage">
+        <div class="usernameInput-container">
+          <input type="text"
+            value={this.props.usernameInput}
+            onChange={(e)=>this.onUsernameInputChange(e)}
+            placeholder="Discogs Username"
+          />
+          <button
+            type="button"
+            onClick={this.onUsernameSubmit}
+          >Go</button>
+          <br/>
+        </div>
+        <p>
+          Examples <br/>
+          harim1206 <br/>
+          Studebakerhawk <br/>
+          ghood
+        </p>
       </div>
     )
   }

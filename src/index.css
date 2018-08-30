@@ -98,8 +98,12 @@ body {
 
 }
 
+.landingPage p{
+  text-align: center;
+}
+
 .usernameInput-container{
-  display:flex;
+  display: flex;
   justify-content: center;
 }
 
