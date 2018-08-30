@@ -78,8 +78,7 @@ body {
 }
 
 .navigation-bar div{
-  /* display: inline-block;
-  margin-right: 25px; */
+  cursor: pointer;
 }
 
 .main-container{
@@ -131,6 +130,7 @@ body {
 
 .new-playlist-wrapper i{
   padding-top: 5px;
+  cursor: pointer;
 }
 .new-playlist-wrapper input{
   width: 70%;
