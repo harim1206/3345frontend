@@ -58,8 +58,8 @@ const sortByDateAdded = (releases) => {
 
 export function fetchPlaylists(){
 
-  // const playlistUrl = '//localhost:3000/api/v1/playlists'
-  const playlistUrl = 'backend3345.herokuapp.com'
+  const playlistUrl = '//localhost:3000/api/v1/playlists'
+  // const playlistUrl = 'backend3345.herokuapp.com'
 
   return function(dispatch){
     fetch(playlistUrl)
