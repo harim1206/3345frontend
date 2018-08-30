@@ -39,7 +39,7 @@ class UsernameInput extends Component{
           <br/>
         </div>
         <p>
-          Examples <br/>
+          Examples:<br/>
           harim1206 <br/>
           Studebakerhawk <br/>
           ghood
