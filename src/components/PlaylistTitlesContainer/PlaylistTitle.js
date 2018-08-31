@@ -12,8 +12,12 @@ class PlaylistTitle extends Component{
     const playlist = this.props.playlist
 
     return(
-      <div onClick={()=>this.props.onPlaylistTitleClick(playlist)}>
-        <i className="fas fa-times fa-xs" onClick={()=>this.props.onPlaylistTitleDelete(playlist)}></i>
+      <div
+        onClick={()=>this.props.onPlaylistTitleClick(playlist)} className="playlistName"
+      >
+        <i
+          className="fas fa-times fa-xs" onClick={()=>this.props.onPlaylistTitleDelete(playlist)}
+        ></i>
         {"   "+playlist.name}
       </div>
     )
