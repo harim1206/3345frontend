@@ -3,7 +3,8 @@
 
 export function onPlaylistTitleClick(playlist){
 
-  const url = `//localhost:3000/api/v1/playlists/${playlist.id}`
+  // const url = `//localhost:3000/api/v1/playlists/${playlist.id}`
+  const url = `https://backend3345.herokuapp.com/api/v1/playlists/${playlist.id}`
 
   return function(dispatch){
 
@@ -33,10 +34,13 @@ export function onNewPlaylistInputChange(input){
 }
 
 export function onNewPlaylistSubmit(postData){
+  // const url = 'http://localhost:3000/api/v1/playlists'
+
+  const url = `https://backend3345.herokuapp.com/api/v1/playlists`
 
   return function(dispatch){
 
-    fetch('http://localhost:3000/api/v1/playlists', {
+    fetch(url, {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'
@@ -58,8 +62,9 @@ export function onNewPlaylistSubmit(postData){
 }
 
 export function onPlaylistTitleDelete(playlist){
-  
-  const playlistUrl = `//localhost:3000/api/v1/playlists/${playlist.id}`
+
+  // const playlistUrl = `//localhost:3000/api/v1/playlists/${playlist.id}`
+  const playlistUrl = `https://backend3345.herokuapp.com/api/v1/playlists/${playlist.id}`
 
   return function(dispatch){
 
@@ -70,7 +75,8 @@ export function onPlaylistTitleDelete(playlist){
       }
     })
     .then(res=>{
-      const playlistUrl = '//localhost:3000/api/v1/playlists'
+      // const playlistUrl = '//localhost:3000/api/v1/playlists'
+      const playlistUrl = `https://backend3345.herokuapp.com/api/v1/playlists`
 
       fetch(playlistUrl)
       .then(res => res.json())

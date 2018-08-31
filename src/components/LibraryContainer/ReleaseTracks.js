@@ -7,6 +7,9 @@ class ReleaseTracks extends Component{
   // on playlist select menu change, add track to playlist
   saveToPlaylist = (video, release, event) =>{
 
+    // const url = 'http://localhost:3000/api/v1/tracks'
+    const url = `https://backend3345.herokuapp.com/api/v1/tracks`
+
     let postData = {
       artist: release.artist,
       release: release.title,
@@ -22,7 +25,7 @@ class ReleaseTracks extends Component{
       playlist_id: event.target.value
     }
 
-    fetch('http://localhost:3000/api/v1/tracks', {
+    fetch(url, {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'
