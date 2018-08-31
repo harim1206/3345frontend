@@ -1,3 +1,4 @@
+import { serverUrl } from '../url.js'
 require('dotenv').config()
 
 export function fetchCollection(username){
@@ -59,7 +60,8 @@ const sortByDateAdded = (releases) => {
 export function fetchPlaylists(){
 
   // const playlistUrl = '//localhost:3000/api/v1/playlists'
-  const playlistUrl = 'https://backend3345.herokuapp.com/api/v1/playlists'
+  // const playlistUrl = 'https://backend3345.herokuapp.com/api/v1/playlists'
+  const playlistUrl = `${serverUrl}/api/v1/playlists`
 
   return function(dispatch){
     fetch(playlistUrl)
