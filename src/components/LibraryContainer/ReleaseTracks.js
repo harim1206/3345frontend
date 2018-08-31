@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 import { onVideoClick } from '../../actions/libraryActions.js'
+import { serverUrl } from '../../url.js'
 
 class ReleaseTracks extends Component{
 
@@ -8,7 +9,8 @@ class ReleaseTracks extends Component{
   saveToPlaylist = (video, release, event) =>{
 
     // const url = 'http://localhost:3000/api/v1/tracks'
-    const url = `https://backend3345.herokuapp.com/api/v1/tracks`
+    // const url = `https://backend3345.herokuapp.com/api/v1/tracks`
+    const url = `${serverUrl}/api/v1/tracks`
 
     let postData = {
       artist: release.artist,
