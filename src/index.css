@@ -81,6 +81,10 @@ body {
   cursor: pointer;
 }
 
+.navigation-bar div:hover{
+  background-color: rgb(217, 233, 247);
+}
+
 .main-container{
   display: grid;
   /* width: 640px; */
@@ -125,6 +129,10 @@ body {
 
 .playlistName{
   cursor: pointer;
+}
+
+.playlistName:hover{
+  background-color: rgb(217, 233, 247);
 }
 
 .new-playlist-wrapper{
@@ -177,6 +185,11 @@ body {
   cursor: pointer;
 }
 
+.release-row:hover, .youtube-row:hover{
+  background-color: rgb(217, 233, 247);
+
+}
+
 select{
   width: 100px;
 }
@@ -194,6 +207,10 @@ select{
 
 .playlistDisplay-table tr{
   cursor: pointer;
+}
+
+.playlistDisplay-table tr:hover{
+  background-color: rgb(217, 233, 247);
 }
 
 .track-column-header{
