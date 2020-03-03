@@ -1,6 +1,6 @@
 const initialState = {
   // Current Video/Image
-  currentVideo: {url: "https://www.youtube.com/watch?v=rtXIdykj2QE"},
+  currentVideo: {url: "https://www.youtube.com/watch?v=m-yaWMvpeUU"},
   nextVideo: {},
   currentReleaseImgUrl: ""
 }
@@ -10,7 +10,7 @@ export default function(state = initialState, action){
     case 'FETCH_COLLECTION':
       return {
         ...state,
-        currentVideo: {url: "https://www.youtube.com/watch?v=rtXIdykj2QE"}
+        currentVideo: {url: "https://www.youtube.com/watch?v=m-yaWMvpeUU"}
       }
 
     case 'ON_RELEASE_CLICK':
