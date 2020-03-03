@@ -1,5 +1,5 @@
 import { serverUrl } from '../url.js'
-require('dotenv').config()
+// require('dotenv').config()
 
 export function fetchCollection(username){
 

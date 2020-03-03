@@ -2,9 +2,10 @@
   "name": "front-end",
   "version": "0.1.0",
   "private": true,
+  "devDependencies": {
+  },
   "dependencies": {
     "create-react-app": "^1.5.2",
-    "dotenv": "^6.0.0",
     "react": "^16.4.0",
     "react-bootstrap-table": "^4.3.1",
     "react-dom": "^16.4.0",
